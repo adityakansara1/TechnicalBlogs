@@ -408,7 +408,9 @@ def like(srno):
     db.session.commit()
 
     return render_template('section.html',likes=posts.like)
-
+                    
+if __name__ == "__main__":
+    app.run()
 
 # end of function section
-app.run(debug=True)
+#app.run(debug=True)
